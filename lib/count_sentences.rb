@@ -27,7 +27,6 @@ class String
   end
 
   def count_sentences
-    self.split(/[.?!]/).delete_if{ | item | item == "" }.size
+    self.split(/[.?!]/).delete_if{ | item | item == "" }.count
   end
-  binding.pry
 end
